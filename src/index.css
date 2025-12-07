@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+
+  /* PRIMARY */
+  --color-my-orange: hsl(26, 100%, 55%);
+  --color-my-pale-orange: hsl(25, 100%, 94%);
+
+  /* NEUTRAL */
+  --color-my-very-dark-blue: hsl(220, 13%, 13%);
+  --color-my-dark-grayish-blue: hsl(219, 9%, 45%);
+  --color-my-grayish-blue: hsl(220, 14%, 75%);
+  --color-my-light-grayish-blue: hsl(223, 64%, 98%);
+  --color-my-white: hsl(0, 0%, 100%);
+  --color-my-black: hsl(0, 0%, 0%);
+  /* BLACK (with 75% opacity for lightbox background) */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
