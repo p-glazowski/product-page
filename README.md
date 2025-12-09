@@ -1,73 +1,110 @@
-# React + TypeScript + Vite
+# 🛒 Product Page with Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive e-commerce product page built with **React**, **TypeScript**, and **Tailwind CSS**.  
+Features dynamic product display, image gallery, cart management, discount pricing, and responsive design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## React Compiler
+![Product Page Screenshot](/screenshot.jpg)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+LIVE: [https://dzik0.github.io/product-page](https://dzik0.github.io/product-page)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🖼️ **Product Image Gallery** with multiple product images
+- 💰 **Dynamic Pricing** showing original price and discount
+- 🛍️ **Cart Management** - add/remove items with quantity control
+- 📱 **Fully Responsive** - optimized for mobile and desktop
+- 🔄 **Real-time Updates** - cart state syncs across components
+- 🎨 **Modern UI** with smooth interactions and hover effects
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+- **React 18** (Context API for state management)
+- **TypeScript** (full type safety)
+- **Tailwind CSS** (responsive utility-first styling)
+- **Vite** (fast development & builds)
+
+---
+
+## 📁 File Structure
+
+```
+src/
+├── comps/
+│   ├── CartProvider.tsx       # Shopping cart state & logic
+│   ├── DataProvider.tsx       # Product data & context
+│   ├── Header.tsx             # Navigation/header component
+│   └── Product/
+│       ├── Product.tsx        # Main product display
+│       ├── Image.tsx          # Product image gallery
+│       ├── Info.tsx           # Product details & info
+│       ├── Price.tsx          # Dynamic pricing with discount
+│       └── Controls.tsx       # Add to cart controls
+├── App.tsx                    # Main app with providers
+└── assets/
+    ├── image-product-1.jpg
+    ├── image-product-2.jpg
+    └── ...
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 How It Works
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **DataProvider** supplies product data (sneakers with images, price, discount)
+- **CartProvider** manages cart state with add/remove functionality
+- **Product** component displays current product with real-time pricing
+- **Context API** enables seamless state sharing between components
+- **Responsive layout** adapts from mobile gallery to desktop side-by-side view
+
+---
+
+## 📦 Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Dzik0/product-page.git
+   cd product-page
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run development server:**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## ✅ Future Improvements
+
+- [ ] Image lightbox/zoom functionality
+- [ ] Persistent cart with localStorage
+- [ ] Multiple product variants (sizes, colors)
+- [ ] Checkout flow integration
+- [ ] Loading states and error handling
+
+---
+
+## 👨‍💻 Author
+
+**Dzik0**  
+GitHub: [https://github.com/Dzik0](https://github.com/Dzik0)
+
+---
+
+## 📝 License
+
+Open source under the [MIT License](LICENSE).
