@@ -16,16 +16,19 @@
   --color-my-light-grayish-blue: hsl(223, 64%, 98%);
   --color-my-white: hsl(0, 0%, 100%);
   --color-my-black: hsl(0, 0%, 0%);
+  --color-my-light-orange: hsl(26, 100%, 75%);
   /* BLACK (with 75% opacity for lightbox background) */
 }
 
 * {
   box-sizing: border-box;
+  /*  background-color: rgba(0, 0, 0, 0.18); */
 }
 
 body {
   min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
+  position: relative;
 }
 
 img {
