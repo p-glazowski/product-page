@@ -9,7 +9,7 @@ Features dynamic product display, image gallery, cart management, discount prici
 
 ![Product Page Screenshot](/screenshot.jpg)
 
-LIVE: [https://dzik0.github.io/product-page](https://dzik0.github.io/product-page)
+LIVE: [https://p-glazowski.github.io/product-page](https://p-glazowski.github.io/product-page)
 
 ---
 
@@ -71,7 +71,7 @@ src/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Dzik0/product-page.git
+   git clone https://github.com/p-glazowski/product-page.git
    cd product-page
    ```
 
