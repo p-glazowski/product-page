@@ -38,6 +38,7 @@ export default function Controls() {
       >
         Add to cart
       </button>
+      <button className="rounded-md bg-red-500 p-2">Like</button>
     </div>
   );
 }
