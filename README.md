@@ -1,4 +1,4 @@
-# 🛒 Product Page with Insta Cart
+# 🛒 Product Page with Cart
 
 An interactive e-commerce product page built with **React**, **TypeScript**, and **Tailwind CSS**.  
 Features dynamic product display, image gallery, cart management, discount pricing, and responsive design.
